@@ -1,12 +1,11 @@
+/* Section contact */
 .contact-section {
+  background: url(../../assets/images/about-hero-bg.jpg) center / cover;
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 500px));
   justify-items: center;
   justify-content: center;
-  background: url(../../assets/images/about-hero-bg.jpg) center / cover;
-  /* height: 100vh; */
-  /* overflow-y: scroll; */
-  background-attachment: fixed;
   align-items: center;
   color: var(--white);
   padding: 32px 16px 64px;
@@ -17,6 +16,7 @@
   color: var(--black);
 }
 
+/* Formulaire de contact et coordonnées */
 form {
   width: 100%;
 }
@@ -45,8 +45,7 @@ label {
   display: block;
 }
 
-.coords-aside {
-}
+/* Reponsive */
 
 @media screen and (max-width: 930px) {
   .contact-section {

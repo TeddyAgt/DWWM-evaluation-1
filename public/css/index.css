@@ -1,8 +1,7 @@
 /* Hero section */
 .hero-section {
-  background: url(../../assets/images/hero-bg-80.jpg) center / cover;
-  /* Voir si je retire la hauteur du header plus tard */
   min-height: 100vh;
+  background: url(../../assets/images/hero-bg-80.jpg) center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +10,6 @@
 }
 
 .hero-section__title {
-  text-align: center;
   font-size: clamp(4.4rem, 5.5vw, 80rem);
   font-weight: 1000;
   margin-bottom: 16px;
