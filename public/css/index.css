@@ -1,0 +1,30 @@
+/* Hero section */
+.hero-section {
+  background: url(../../assets/images/hero-bg-80.jpg) center / cover;
+  /* Voir si je retire la hauteur du header plus tard */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.hero-section__title {
+  text-align: center;
+  font-size: clamp(4.4rem, 5.5vw, 80rem);
+  font-weight: 1000;
+  margin-bottom: 16px;
+}
+
+.hero-section__subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 80px;
+  background: var(--white);
+  margin-block: 32px;
+}

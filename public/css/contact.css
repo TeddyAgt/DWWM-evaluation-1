@@ -1,0 +1,76 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 500px));
+  justify-items: center;
+  justify-content: center;
+  background: url(../../assets/images/about-hero-bg.jpg) center / cover;
+  /* height: 100vh; */
+  /* overflow-y: scroll; */
+  background-attachment: fixed;
+  align-items: center;
+  color: var(--white);
+  padding: 32px 16px 64px;
+}
+
+.contact-section .section-title {
+  grid-column: span 2;
+  color: var(--black);
+}
+
+form {
+  width: 100%;
+}
+
+form,
+.coords-aside {
+  padding: 32px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+.btn {
+  margin-bottom: 16px;
+  margin-left: auto;
+  display: block;
+}
+
+.coords-aside {
+}
+
+@media screen and (max-width: 930px) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  form,
+  .coords-aside {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  form,
+  .coords-aside {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  form,
+  .coords-aside {
+    width: 100%;
+  }
+}
